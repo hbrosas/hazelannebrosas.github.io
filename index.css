@@ -7,6 +7,10 @@ body {
 	font-size: 0.9em;
 }
 
+.container {
+	max-width: 1920px;
+}
+
 div.left-container {
 	float:  left;
 	padding: 3em 0em 0em 3em;
@@ -103,6 +107,11 @@ ul {
 
 .section-side-summary h4 {
 	margin-bottom: 5px;
+}
+
+.section-side-summary ul.list-none {
+	padding: 0;
+	margin-left: 0;
 }
 
 
