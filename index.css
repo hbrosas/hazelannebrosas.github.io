@@ -27,10 +27,6 @@ ul {
 	float: right;
 }
 
-.section-tag.mobile-tag {
-	display: none;
-}
-
 .section-tag {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
@@ -138,12 +134,14 @@ ul {
 	}
 
 	.section-body h1 {
-		display: none;
-	}
-
-	.section-tag.mobile-tag {
+		margin: 1em 0em;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: 700;
+		border: 2px solid black;
+		padding: 0.5em 0.75em;
 		display: inline-block;
-		margin: 1.5em 0em;
 	}
 
 	.section-summary h3, .section-summary h4, .right {
