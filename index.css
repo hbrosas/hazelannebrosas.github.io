@@ -7,18 +7,31 @@ body {
 	font-size: 0.9em;
 }
 
+div.left-container {
+	float:  left;
+	padding: 3em 0em 0em 3em;
+}
+
+aside {
+	float:  right;
+	padding: 3em 3em 3em 2em;
+	min-height: 100vh;
+	border-left: 2px solid black;
+}
+
+ul {
+	margin-left: 1em;
+}
+
 .right {
 	float: right;
 }
 
-.section-name {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-	font-size: 3em;
-	line-height: 1.15em;
+.section-tag.mobile-tag {
+	display: none;
 }
 
-.section-heading {
+.section-tag {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
@@ -28,58 +41,113 @@ body {
 	display: inline-block;
 }
 
-.section-subheading {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
-	font-size: 2.5em;
-	margin-top: 3em !important;
-}
 
-.top-section {
+/* Section Heading */
+
+.section-header {
 	border-bottom: 2px solid black;
 	padding-bottom: 2em;
 }
 
-.bottom-section {
+.section-header h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	line-height: 1.15em;
+}
+
+.section-tag {
+	margin-bottom: 2em;
+}
+
+
+/* Section Body & Section Summary */
+.section-body {
 	padding: 2em 1em;
 	padding-right: 3em;
 }
 
-.right-section {
-	min-height: 100vh;
-	border-left: 2px solid black;
-	padding: 0em 2em;
-	padding-bottom: 2.25em;
-}
-
-.date {
-	font-size: 0.8em;
-	font-weight: 400;
-}
-
-.sub-info {
-	font-family: 'EB Garamond', serif;
-	font-style: italic;
-	font-size: 1.10em;
-}
-
-.head-info {
-	text-transform: uppercase;
+.section-body h1 {
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
+	font-size: 2.5em;
 }
 
-.info {
-	font-size: 0.9em;
-	text-align: justify;
-}
-
-.section {
-	padding: 0.5em 0em;
-}
-
-.experience-section {
+.section-summary {
 	padding: 0;
 	padding-left: 2em;
 	margin:  1.5em 0em;
 	border-left:  2px solid black;
+}
+
+.section-summary h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-summary h4 {
+	margin-bottom: 5px;
+}
+
+
+/* Side Container */
+.contact {
+	margin-bottom: 2em;
+}
+
+.section-side-summary {
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+.section-side-summary h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-side-summary h4 {
+	margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  	div.left-container, aside {
+		border:  none;
+	}
+
+	div.left-container {
+		padding: 2em;
+	}
+
+	aside {
+		padding: 0em 2em 2em 2em;
+	}
+
+	.section-summary {
+		padding: 0;
+		margin:  1.5em 0em;
+		border:  none;
+	}
+
+	.section-header h1 {
+		font-size: 2.5em;
+	}
+
+	.section-body {
+		padding: 2em 0em 0em 0em;
+	}
+
+	.section-body h1 {
+		display: none;
+	}
+
+	.section-tag.mobile-tag {
+		display: inline-block;
+		margin: 1.5em 0em;
+	}
+
+	.section-summary h3, .section-summary h4, .right {
+		overflow-wrap: break-word;
+		inline-size: 250px;
+	}
 }
